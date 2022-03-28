@@ -26,10 +26,6 @@ const Users = () => {
     return classes
   }
 
-  const getClassesOfClasses = () => {
-
-  }
-
   const handleDecrement = (id) => {
     setCount((prevState) => prevState - 1)
     setUsers((prevState) => prevState.filter((user) => user._id !== id))
