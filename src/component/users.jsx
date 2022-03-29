@@ -51,8 +51,8 @@ const Users = () => {
           key={user._id}
           >
             <td>{user.name}</td>
-            <td className={user.qualities._id}>{user.qualities.map((item) => {
-              return <span key={item._id}> {item.name}</span>
+            <td>{user.qualities.map((item) => {
+              return <span key={item._id} className={`badge bg-${item.color} m-1`}> {item.name}</span>
             })}</td>
           
             <td>{user.profession.name}</td>            
