@@ -5,6 +5,7 @@ const BookMark = ({ status, onToggleBookMark, id }) => {
     return (
         <i
             onClick={() => onToggleBookMark(id)}
+            role="button"
             className={`bi bi-bookmark${status ? "-fill" : ""}`}
         ></i>
     )
